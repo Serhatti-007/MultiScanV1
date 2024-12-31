@@ -17,7 +17,6 @@ MultiScanV1 is a network and security analysis tool designed to work on Kali Lin
 1. Clone this project:
    ```bash
    git clone https://github.com/<Serhatti-007>/MultiScanV1.git
-   cd MultiScanV1
 2. Install the required dependencies:
    pip install -r requirements.txt
 3. Run the tool:
