@@ -1,20 +1,20 @@
 #!/bin/bash
 
 echo "----------------------------------------"
-echo "MultiScanV1 Kurulum Başlıyor..."
+echo "MultiScanV1 Installation Starting..."
 echo "----------------------------------------"
 
-# Gerekli bağımlılıkları yükle
-echo "Gerekli Python kütüphaneleri yükleniyor..."
+# Install required dependencies
+echo "Installing required Python libraries..."
 pip install -r requirements.txt --break-system-packages
 
 if [ $? -eq 0 ]; then
     echo "----------------------------------------"
-    echo "Kurulum Tamamlandı!"
-    echo "Programı çalıştırmak için aşağıdaki komutu kullanabilirsiniz:"
+    echo "Installation Completed!"
+    echo "You can run the program using the following command:"
     echo "python scanner.py"
     echo "----------------------------------------"
 else
-    echo "Hata: Bağımlılık yükleme sırasında bir sorun oluştu."
-    echo "Lütfen pip ve internet bağlantınızı kontrol edin."
+    echo "Error: An issue occurred while installing dependencies."
+    echo "Please check your pip installation and internet connection."
 fi
