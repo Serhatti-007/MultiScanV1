@@ -6,7 +6,7 @@ echo "----------------------------------------"
 
 # Gerekli bağımlılıkları yükle
 echo "Gerekli Python kütüphaneleri yükleniyor..."
-pip install -r requirements.txt
+pip install -r requirements.txt --break-system-packages
 
 if [ $? -eq 0 ]; then
     echo "----------------------------------------"
